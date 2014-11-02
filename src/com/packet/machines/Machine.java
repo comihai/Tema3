@@ -4,7 +4,7 @@ package com.packet.machines;
  * Created by mihai on 11/2/2014.
  * This is the abstract machine class
  */
-public abstract class  Machine {
+public abstract class Machine {
 
     private float capacity;
     private float power;
@@ -12,6 +12,7 @@ public abstract class  Machine {
 
     /**
      * The default constructor that initializes the machine with capacity and power;
+     *
      * @param capacity
      * @param power
      */
@@ -21,10 +22,9 @@ public abstract class  Machine {
     }
 
     /**
-     *
      * This method must be overwritten by all the subclasses
      *
-     * @param championship  The name of the championship
+     * @param championship The name of the championship
      * @return True if the machine is for racing, False otherwise
      */
     public abstract boolean usedForRace(String championship);
@@ -34,14 +34,14 @@ public abstract class  Machine {
      *
      * @return
      */
-    public  boolean designedForUseOverRoughTerrain()
-    {
+    public boolean designedForUseOverRoughTerrain() {
         return (getPower() > 100 && getCapacity() > 240) ? true : false;
 
     }
 
     /**
      * Gets the capacity of the machine
+     *
      * @return
      */
     public float getCapacity() {
@@ -50,6 +50,7 @@ public abstract class  Machine {
 
     /**
      * Gets the power of the machine
+     *
      * @return
      */
     public float getPower() {
@@ -58,6 +59,7 @@ public abstract class  Machine {
 
     /**
      * Sets the capacity of the machine
+     *
      * @param capacity
      */
     public void setCapacity(int capacity) {
@@ -66,6 +68,7 @@ public abstract class  Machine {
 
     /**
      * Sets the power of the machine
+     *
      * @param power
      */
     public void setPower(int power) {
