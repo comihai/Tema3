@@ -7,7 +7,10 @@ package com.packet.exceptions;
 public class OffRoadMachineException extends Exception {
     /**
      * Constructorul default
+     *
      * @param message
      */
-    public OffRoadMachineException(String message) {super(message);}
+    public OffRoadMachineException(String message) {
+        super(message);
+    }
 }

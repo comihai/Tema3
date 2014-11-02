@@ -2,11 +2,12 @@ package com.packet.machines;
 
 import com.packet.exceptions.OffRoadMachineException;
 import com.packet.interfaces.IOffRoadMachine;
+
 import java.util.Random;
 
 /**
  * Created by mihai on 11/2/2014.
- *
+ * <p/>
  * This is the class for automobile
  */
 public class Automobile extends Machine implements IOffRoadMachine {
@@ -108,6 +109,7 @@ public class Automobile extends Machine implements IOffRoadMachine {
 
     /**
      * This method print a statemant witch involves the automobile
+     *
      * @throws OffRoadMachineException
      */
     @Override
@@ -120,18 +122,20 @@ public class Automobile extends Machine implements IOffRoadMachine {
 
     /**
      * This method verifies if the automobile have enough power for riding offroad
+     *
      * @throws OffRoadMachineException
      */
     @Override
     public void attendingRoadTypes() throws OffRoadMachineException {
-        if(getPower() ==0 && getCapacity() < 50)
+        if (getPower() == 0 && getCapacity() < 50)
             throw new OffRoadMachineException("This vechile is too low!");
 
-        System.out.println(getName() + "has a power of "+getPower()+"units!");
+        System.out.println(getName() + "has a power of " + getPower() + "units!");
     }
 
     /**
      * This method returns true if the automobile  participates at championships
+     *
      * @param championship The name of the championship
      * @return
      */
