@@ -46,7 +46,7 @@ public class Main {
 
 
         System.out.println("Is a racing truck?\n" + ((((Truck) truck).isHasTurbo() ? "Yes.It is!" : "No!" )));
-        System.out.println("Is a truck that is designed for use over rough terrain?\n" + ((( truck).designedForUseOverRoughTerrain() ? "Yes.It is!" : "No!" )));
+        System.out.println("Is a truck that is designed for use over rough terrain?\n" + (((truck).designedForUseOverRoughTerrain() ? "Yes.It is!" : "No!" )));
     }
 
 }
